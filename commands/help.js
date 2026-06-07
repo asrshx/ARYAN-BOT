@@ -13,7 +13,7 @@ export default {
       const commandsPath = __dirname;
       const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith(".js"));
 
-      let helpMessage = "🌌 ───── 𝗛𝗘𝗡𝗥𝗬-𝗫 𝗕𝗢𝗧 ───── 🌌\n\n";
+      let helpMessage = "🌌 ───── ARYAN BOT ───── 🌌\n\n";
       helpMessage += "⚡ 𝗔𝗟𝗟 𝗔𝗩𝗔𝗜𝗟𝗔𝗕𝗟𝗘 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 ⚡\n\n";
 
       for (const file of commandFiles) {
@@ -26,7 +26,7 @@ export default {
         }
       }
 
-      helpMessage += "\n👑 𝗖𝗥𝗘𝗗𝗜𝗧𝗦: HENRY-X";
+      helpMessage += "\n👑 𝗖𝗥𝗘𝗗𝗜𝗧𝗦: ARYAN";
       helpMessage += "\n🚀 Stay Connected | More Features Coming Soon!";
 
       api.sendMessage(helpMessage, event.threadID, event.messageID);
